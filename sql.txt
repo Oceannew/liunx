@@ -1,0 +1,67 @@
+mysql> create database myschool
+    -> ;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use myschool
+Database changed
+mysql> create table t_syudent
+    -> (
+    -> stu_id char(10),
+    -> stu_name char(50),
+    -> stu_sex char(2),
+    -> stu_birthday date,
+    -> stu_telephone varchar(20),
+    -> major_id char(50)
+    -> );
+Query OK, 0 rows affected (0.24 sec)
+
+mysql> create table t_student
+    -> (
+    -> stu_id char(10),
+    -> stu_name char(50),
+    -> stu_sex char(2),
+    -> stu_birthday date,
+    -> stu_telephone varchar(20),
+    -> major_id char(50)
+    -> );
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> create table t_course
+    -> (
+    -> course_id char(8),
+    -> course_name varchar(50),
+    -> course_type varchar(10),
+    -> course_credit int,
+    -> teacher_id char(10)
+    -> );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> create table t_score
+    -> (score_id char(4).
+    -> stu_id char(10),^C
+mysql> create table t_score
+    -> (score_id char(4),
+    -> stu_id char(10),
+    -> course_id char(8),
+    -> grade float (2,1)
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table t_teacher
+    -> (
+    -> teacher_id char(10),
+    -> teacher_name varchar(50),
+    -> teacher_title varchar(20),
+    -> teacher_sex char(2)
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table t_major
+    -> (
+    -> major_id char(5),
+    -> major_name varchar(50)
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> insert into t_major
+    -> values('0001','cloud')
